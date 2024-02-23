@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac | Educação profissional para todos</title>
+    <style>
+        #header {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #menu-navegacao > ul  {
+            list-style: none;   
+            display: flex; /*Para ficar um do lado do outro*/
+            gap: 2rem; /*Vale +- 32px*/
+        }
+
+        .item {
+            color: blue;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        /*Identifica o seu comportamento e faz o que tem que ser feito quando passar em cima de um componente*/
+        .item:hover {
+            cursor: pointer;
+            color: white;
+            background: blue;
+            transition: 1s;
+            /*Portanto, quando passar o mouse irá modificar sua forma original*/
+        }
+
+        #lista > ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        ul > li > a {
+            width: 20px;
+            height: 20px;
+            background-color: gray;
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--style="border-radius: 50% (ARREDONDA A IMAGEM)-->     
+        <img src="logoSenac.jpg" alt="logoSenac" width="100px">
+
+        <!--Nome único da página, para poder fazer referência-->
+        <div id="menu-navegacao">
+            <ul>
+                <!-- <li> - Representa lista -->
+                <li class="item">O Senac</li>
+                <li class="item">Unidades</li>
+                <li class="item">Gratuidades</li>
+                <li class="item">Educação a Distâncias</li>
+                <li class="item">Tranparência e Prestação de Contas</li>
+                <li class="item">Senac Empresas</li>
+            </ul>
+        </div> 
+
+        <div id="lista">
+            <ul>
+                <li><a href="https://www.facebook.com/SenacBrasil">F</a></li>
+                <li><a href="https://www.instagram.com/senacbrasil/">I</a></li>
+                <li><a href="https://twitter.com/SenacBrasil">T</a></li>
+                <li><a href="https://www.linkedin.com/school/senacbrasil">L</a></li>
+                <li><a href="https://www.youtube.com/@senacbrasil">Y</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>
